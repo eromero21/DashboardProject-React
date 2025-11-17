@@ -1,6 +1,7 @@
 import './App.css'
 import Header from './components/Header';
 import SummaryCards from './components/SummaryCards';
+import ChartPanel from './components/ChartPanel';
 import { summaryStats, revenueByDay, recentTransactions } from "./mockData.js";
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
             </section>
 
             <section className="dash-mid">
-                {/* This will be the ChartPanel */}
+                <ChartPanel data={revenueByDay} />
             </section>
 
             <section className="dash-bot">
