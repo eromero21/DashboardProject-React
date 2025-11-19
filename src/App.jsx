@@ -3,6 +3,7 @@ import Header from './components/Header';
 import SummaryCards from './components/SummaryCards';
 import ChartPanel from './components/ChartPanel';
 import { summaryStats, revenueByDay, recentTransactions } from "./mockData.js";
+import TransactionsTable from "./components/TransactionsTable";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
             </section>
 
             <section className="dash-bot">
-                {/* This will be the TransactionTable */}
+                <TransactionsTable transactions={recentTransactions} />
             </section>
         </main>
     </div>

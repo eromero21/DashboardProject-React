@@ -74,7 +74,7 @@
   border-radius: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-top: 20px;
-  width: 40%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,15 +82,15 @@
 }
 
 .summary-label {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: white;
   margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
 .summary-value {
   font-size: 1.2rem;
-  font-weight: bold;
-  color: black;
+  color: white;
 }
 
 .summary-change-p {
@@ -135,4 +135,30 @@
   margin-top: 0.5rem;
   font-size: 1.2rem;
   color: white;
+}
+
+.transactions-panel {
+  background: #6b7280;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.transactions-panel h2 {
+  text-align: center;
+  color: white;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 0.75rem;
+  text-align: left;
+  color: white;
+  border: 0.1rem solid gray;
 }
